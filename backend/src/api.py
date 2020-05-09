@@ -88,7 +88,7 @@ def create_drink(token):
             "success": True,
             "drinks": drinks
         }
-        return make_response(jsonify(drinks_response), 201)
+        return make_response(jsonify(drinks_response), 200)
     except:
         print(sys.exc_info())
         abort(500)
